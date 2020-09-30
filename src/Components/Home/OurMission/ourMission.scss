@@ -24,19 +24,21 @@
       flex-direction: column;
       color: $fontColor;
       .titleHolder {
+        width: 150%;
         @include title;
       }
       ul {
+        width: 100%;
+        height: 100%;
+        margin: 30% 0 0 50%;
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
         text-align: center;
-        margin: 30% 0 0 50%;
         li {
-          list-style: none;
           height: 10rem;
+          margin-top: 1rem;
+          list-style: none;
           p {
             display: block;
             cursor: pointer;
