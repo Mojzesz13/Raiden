@@ -1,1 +1,0 @@
-{"version":3,"sources":["Home.scss"],"names":[],"mappings":"AAAA,eACE,gBAAiB,CACjB,aAAc","file":"main.9270e184.chunk.css","sourcesContent":[".homeContainer {\n  max-width: 190rem;\n  margin: 0 auto;\n}\n"]}
