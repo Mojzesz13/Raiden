@@ -1,0 +1,15 @@
+@import 'scss/reset';
+@import 'scss/settings/font';
+@import 'scss/settings/colors';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  #root {
+    font-family: $font-base;
+    box-sizing: border-box;
+  }
+  background-color: black;
+}
