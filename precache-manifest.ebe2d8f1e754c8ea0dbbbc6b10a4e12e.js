@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cda53fe7f03e95b1a5892d4c663ef4e7",
+    "revision": "206187926a7bc94acbce229bbd028296",
     "url": "/raiden2/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raiden2/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "4e44b60b7666a84c6788",
-    "url": "/raiden2/static/css/main.35777a96.chunk.css"
+    "revision": "5009639b17c5ee0df952",
+    "url": "/raiden2/static/css/main.eed6c339.chunk.css"
   },
   {
     "revision": "3a019eeb191b3e2858ba",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raiden2/static/js/2.7f4b335e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4e44b60b7666a84c6788",
+    "revision": "5009639b17c5ee0df952",
     "url": "/raiden2/static/js/main.f9ebc51f.chunk.js"
   },
   {
