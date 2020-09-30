@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/raiden2/static/css/main.a0d4daa2.chunk.css",
+    "main.css": "/raiden2/static/css/main.5f76342f.chunk.css",
     "main.js": "/raiden2/static/js/main.648d34df.chunk.js",
     "main.js.map": "/raiden2/static/js/main.648d34df.chunk.js.map",
     "runtime-main.js": "/raiden2/static/js/runtime-main.564aee2d.js",
@@ -9,10 +9,10 @@
     "static/js/2.3e1d0582.chunk.js": "/raiden2/static/js/2.3e1d0582.chunk.js",
     "static/js/2.3e1d0582.chunk.js.map": "/raiden2/static/js/2.3e1d0582.chunk.js.map",
     "index.html": "/raiden2/index.html",
-    "precache-manifest.f7f2986e9918460635d6064811482b51.js": "/raiden2/precache-manifest.f7f2986e9918460635d6064811482b51.js",
+    "precache-manifest.a095c7bb14d4e62b6a9cbd1b804d1f2c.js": "/raiden2/precache-manifest.a095c7bb14d4e62b6a9cbd1b804d1f2c.js",
     "service-worker.js": "/raiden2/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/raiden2/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.a0d4daa2.chunk.css.map": "/raiden2/static/css/main.a0d4daa2.chunk.css.map",
+    "static/css/main.5f76342f.chunk.css.map": "/raiden2/static/css/main.5f76342f.chunk.css.map",
     "static/js/2.3e1d0582.chunk.js.LICENSE.txt": "/raiden2/static/js/2.3e1d0582.chunk.js.LICENSE.txt",
     "static/media/carousel.scss": "/raiden2/static/media/arrowred.cac5d642.svg",
     "static/media/bg1.jpg": "/raiden2/static/media/bg1.8c0800ee.jpg",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.564aee2d.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.3e1d0582.chunk.js",
-    "static/css/main.a0d4daa2.chunk.css",
+    "static/css/main.5f76342f.chunk.css",
     "static/js/main.648d34df.chunk.js"
   ]
 }
