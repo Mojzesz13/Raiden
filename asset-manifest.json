@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/raiden2/static/css/main.62dbc4e6.chunk.css",
-    "main.js": "/raiden2/static/js/main.9eeb9bfc.chunk.js",
-    "main.js.map": "/raiden2/static/js/main.9eeb9bfc.chunk.js.map",
+    "main.css": "/raiden2/static/css/main.35777a96.chunk.css",
+    "main.js": "/raiden2/static/js/main.f9ebc51f.chunk.js",
+    "main.js.map": "/raiden2/static/js/main.f9ebc51f.chunk.js.map",
     "runtime-main.js": "/raiden2/static/js/runtime-main.564aee2d.js",
     "runtime-main.js.map": "/raiden2/static/js/runtime-main.564aee2d.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/raiden2/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.93273507.chunk.js": "/raiden2/static/js/2.93273507.chunk.js",
-    "static/js/2.93273507.chunk.js.map": "/raiden2/static/js/2.93273507.chunk.js.map",
+    "static/js/2.7f4b335e.chunk.js": "/raiden2/static/js/2.7f4b335e.chunk.js",
+    "static/js/2.7f4b335e.chunk.js.map": "/raiden2/static/js/2.7f4b335e.chunk.js.map",
     "index.html": "/raiden2/index.html",
-    "precache-manifest.2ef9c8e109dd9728e34fca92c02cb50c.js": "/raiden2/precache-manifest.2ef9c8e109dd9728e34fca92c02cb50c.js",
+    "precache-manifest.0ba8dccc8b436dc63210cb32b1569f9d.js": "/raiden2/precache-manifest.0ba8dccc8b436dc63210cb32b1569f9d.js",
     "service-worker.js": "/raiden2/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/raiden2/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.62dbc4e6.chunk.css.map": "/raiden2/static/css/main.62dbc4e6.chunk.css.map",
-    "static/js/2.93273507.chunk.js.LICENSE.txt": "/raiden2/static/js/2.93273507.chunk.js.LICENSE.txt",
+    "static/css/main.35777a96.chunk.css.map": "/raiden2/static/css/main.35777a96.chunk.css.map",
+    "static/js/2.7f4b335e.chunk.js.LICENSE.txt": "/raiden2/static/js/2.7f4b335e.chunk.js.LICENSE.txt",
     "static/media/carousel.scss": "/raiden2/static/media/arrowred.cac5d642.svg",
     "static/media/bg1.jpg": "/raiden2/static/media/bg1.8c0800ee.jpg",
     "static/media/bg2.jpg": "/raiden2/static/media/bg2.8169a66f.jpg",
@@ -27,6 +27,7 @@
     "static/media/aboutUs.scss": "/raiden2/static/media/bgAboutUs.175903be.jpg",
     "static/media/brief.scss": "/raiden2/static/media/bgContact.3cae9e0f.jpg",
     "static/media/HomeHeader.scss": "/raiden2/static/media/bgHeader.d0627beb.jpg",
+    "static/media/facebook.svg": "/raiden2/static/media/facebook.34e73505.svg",
     "static/media/icon1.svg": "/raiden2/static/media/icon1.4715427c.svg",
     "static/media/icon2.svg": "/raiden2/static/media/icon2.1635c374.svg",
     "static/media/icon3.svg": "/raiden2/static/media/icon3.504f05ed.svg",
@@ -38,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.564aee2d.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.93273507.chunk.js",
-    "static/css/main.62dbc4e6.chunk.css",
-    "static/js/main.9eeb9bfc.chunk.js"
+    "static/js/2.7f4b335e.chunk.js",
+    "static/css/main.35777a96.chunk.css",
+    "static/js/main.f9ebc51f.chunk.js"
   ]
 }

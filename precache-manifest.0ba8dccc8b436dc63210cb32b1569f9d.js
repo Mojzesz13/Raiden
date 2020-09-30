@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "abe1b1b6105b78d76ddec15215f9c34d",
+    "revision": "cda53fe7f03e95b1a5892d4c663ef4e7",
     "url": "/raiden2/index.html"
   },
   {
-    "revision": "936b80764aff4d7ec925",
+    "revision": "3a019eeb191b3e2858ba",
     "url": "/raiden2/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "2ea2b5ad3a500ff7f4b0",
-    "url": "/raiden2/static/css/main.62dbc4e6.chunk.css"
+    "revision": "4e44b60b7666a84c6788",
+    "url": "/raiden2/static/css/main.35777a96.chunk.css"
   },
   {
-    "revision": "936b80764aff4d7ec925",
-    "url": "/raiden2/static/js/2.93273507.chunk.js"
+    "revision": "3a019eeb191b3e2858ba",
+    "url": "/raiden2/static/js/2.7f4b335e.chunk.js"
   },
   {
     "revision": "885c0e205ef5e79f4aef448a818ba6a1",
-    "url": "/raiden2/static/js/2.93273507.chunk.js.LICENSE.txt"
+    "url": "/raiden2/static/js/2.7f4b335e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2ea2b5ad3a500ff7f4b0",
-    "url": "/raiden2/static/js/main.9eeb9bfc.chunk.js"
+    "revision": "4e44b60b7666a84c6788",
+    "url": "/raiden2/static/js/main.f9ebc51f.chunk.js"
   },
   {
     "revision": "2dc90ec6f0a42d3c2b92",
@@ -82,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d0627beb2ece3a4bbe278dbc80a80f10",
     "url": "/raiden2/static/media/bgHeader.d0627beb.jpg"
+  },
+  {
+    "revision": "34e73505be53a83b3d32236dab04f124",
+    "url": "/raiden2/static/media/facebook.34e73505.svg"
   },
   {
     "revision": "4715427c54700165c84c1645c15033d7",
