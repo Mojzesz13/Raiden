@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ourMission.scss';
 import img1 from '../../../assets/bg1.jpg';
 import img2 from '../../../assets/bg2.jpg';
@@ -41,22 +41,129 @@ const listItems = [
 ];
 
 const OurMission = () => {
+  const [isHovering, setIsHovering] = useState(false);
+  const [imageSrc, setImageSrc] = useState(img1);
+
+  const handleOnMouseLeave = () => {
+    setIsHovering(false);
+  };
+
+  const handleSetImage = () => {
+    setImageSrc(listItems[0].src);
+    setIsHovering(true);
+  };
+
+  const handleSetImage1 = () => {
+    setImageSrc(listItems[1].src);
+    setIsHovering(true);
+  };
+
+  const handleSetImage2 = () => {
+    setImageSrc(listItems[2].src);
+    setIsHovering(true);
+  };
+
+  const handleSetImage3 = () => {
+    setImageSrc(listItems[3].src);
+    setIsHovering(true);
+  };
+
+  const handleSetImage4 = () => {
+    setImageSrc(listItems[4].src);
+    setIsHovering(true);
+  };
+
+  const handleSetImage5 = () => {
+    setImageSrc(listItems[5].src);
+    setIsHovering(true);
+  };
+
+  const handleSetImage6 = () => {
+    setImageSrc(listItems[6].src);
+    setIsHovering(true);
+  };
+  const handleSetImage7 = () => {
+    setImageSrc(listItems[7].src);
+    setIsHovering(true);
+  };
+
   return (
     <div className="ourMissionContainer" id="ourMission">
       <div className="mainContent">
         <div className="listHolder">
           <div className="titleHolder">Jak wygląda współpraca z nami</div>
           <ul>
-            {listItems.map((obj, index) => (
-              <li key={index}>
-                <p>{obj.text}</p>
-                <img className={obj.cName} src={obj.src} alt={obj.text} />
-              </li>
-            ))}
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage}
+              >
+                {listItems[0].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage1}
+              >
+                {listItems[1].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage2}
+              >
+                {listItems[2].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage3}
+              >
+                {listItems[3].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage4}
+              >
+                {listItems[4].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage5}
+              >
+                {listItems[5].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage6}
+              >
+                {listItems[6].text}
+              </p>
+            </li>
+            <li>
+              <p
+                onMouseLeave={handleOnMouseLeave}
+                onMouseEnter={handleSetImage7}
+              >
+                {listItems[7].text}
+              </p>
+            </li>
           </ul>
         </div>
-        <div className="divider"></div>
       </div>
+      <div
+        className={isHovering ? 'divider' : 'test'}
+        style={{ backgroundImage: `url(${imageSrc})` }}
+      ></div>
     </div>
   );
 };
@@ -64,36 +171,13 @@ const OurMission = () => {
 export default OurMission;
 
 /* <ul>
-            <li>
-              <p>Kontakt telefoniczny</p>
-              <img className="image1" src={img1} alt="img1" />
-            </li>
-            <li>
-              <p>Umówienie spotkania</p>
-              <img className="image2" src={img2} alt="img1" />
-            </li>
-            <li>
-              <p>Wykonanie audytu energetycznego</p>
-              <img className="image3" src={img3} alt="img1" />
-            </li>
-            <li>
-              <p>Wybranie najlepszej oferty z rynku energetycznego</p>
-              <img className="image4" src={img4} alt="img1" />
-            </li>
-            <li>
-              <p>Negocjacje stawek sprzedażowych</p>
-              <img className="image5" src={img5} alt="img1" />
-            </li>
-            <li>
-              <p>Optymalizacja kosztów dystrybucji</p>
-              <img className="image6" src={img6} alt="img1" />
-            </li>
-            <li>
-              <p>Podpisanie umowy</p>
-              <img className="image7" src={img7} alt="img1" />
-            </li>
-            <li>
-              <p>Oszczędność energetyczna</p>
-              <img className="image8" src={img8} alt="img1" />
-            </li>
+            {listItems.map((obj, index) => (
+              <li
+                key={index}
+                onMouseEnter={(handleOnMouseEnter, handleTest(obj.text))}
+                onMouseLeave={handleOnMouseLeave}
+              >
+                <p>{obj.text}</p>
+              </li>
+            ))}
           </ul> */

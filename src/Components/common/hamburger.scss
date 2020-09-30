@@ -4,7 +4,7 @@
 .hamburgerMenu {
   width: 4rem;
   height: 4rem;
-  margin-right: 2rem;
+  margin-left: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
 
   .burgerBtn {
     width: 4rem;
-    height: 0.6rem;
+    height: 0.3rem;
     background-color: $secondFontColor;
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -27,7 +27,7 @@
       content: '';
       position: absolute;
       width: 4rem;
-      height: 0.6rem;
+      height: 0.3rem;
       background-color: $secondFontColor;
       border-radius: 0.5rem;
       box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
