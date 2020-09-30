@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/raiden2/static/css/main.eed6c339.chunk.css",
-    "main.js": "/raiden2/static/js/main.f9ebc51f.chunk.js",
-    "main.js.map": "/raiden2/static/js/main.f9ebc51f.chunk.js.map",
+    "main.css": "/raiden2/static/css/main.d0c0ff8e.chunk.css",
+    "main.js": "/raiden2/static/js/main.142b5f89.chunk.js",
+    "main.js.map": "/raiden2/static/js/main.142b5f89.chunk.js.map",
     "runtime-main.js": "/raiden2/static/js/runtime-main.564aee2d.js",
     "runtime-main.js.map": "/raiden2/static/js/runtime-main.564aee2d.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/raiden2/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.7f4b335e.chunk.js": "/raiden2/static/js/2.7f4b335e.chunk.js",
-    "static/js/2.7f4b335e.chunk.js.map": "/raiden2/static/js/2.7f4b335e.chunk.js.map",
+    "static/js/2.bbc24ddd.chunk.js": "/raiden2/static/js/2.bbc24ddd.chunk.js",
+    "static/js/2.bbc24ddd.chunk.js.map": "/raiden2/static/js/2.bbc24ddd.chunk.js.map",
     "index.html": "/raiden2/index.html",
-    "precache-manifest.ebe2d8f1e754c8ea0dbbbc6b10a4e12e.js": "/raiden2/precache-manifest.ebe2d8f1e754c8ea0dbbbc6b10a4e12e.js",
+    "precache-manifest.c3b38ed1ec50d025250b5b67da08afd9.js": "/raiden2/precache-manifest.c3b38ed1ec50d025250b5b67da08afd9.js",
     "service-worker.js": "/raiden2/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/raiden2/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.eed6c339.chunk.css.map": "/raiden2/static/css/main.eed6c339.chunk.css.map",
-    "static/js/2.7f4b335e.chunk.js.LICENSE.txt": "/raiden2/static/js/2.7f4b335e.chunk.js.LICENSE.txt",
+    "static/css/main.d0c0ff8e.chunk.css.map": "/raiden2/static/css/main.d0c0ff8e.chunk.css.map",
+    "static/js/2.bbc24ddd.chunk.js.LICENSE.txt": "/raiden2/static/js/2.bbc24ddd.chunk.js.LICENSE.txt",
     "static/media/carousel.scss": "/raiden2/static/media/arrowred.cac5d642.svg",
     "static/media/bg1.jpg": "/raiden2/static/media/bg1.8c0800ee.jpg",
     "static/media/bg2.jpg": "/raiden2/static/media/bg2.8169a66f.jpg",
@@ -39,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.564aee2d.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.7f4b335e.chunk.js",
-    "static/css/main.eed6c339.chunk.css",
-    "static/js/main.f9ebc51f.chunk.js"
+    "static/js/2.bbc24ddd.chunk.js",
+    "static/css/main.d0c0ff8e.chunk.css",
+    "static/js/main.142b5f89.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raiden2/precache-manifest.ebe2d8f1e754c8ea0dbbbc6b10a4e12e.js"
+  "/raiden2/precache-manifest.c3b38ed1ec50d025250b5b67da08afd9.js"
 );
 
 self.addEventListener('message', (event) => {
