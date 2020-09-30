@@ -7,19 +7,23 @@ const textContent = [
   {
     text: 'Chcesz zmniejszyć rachunki za prąd w swojej firmie?',
     cName: 'firstClass',
+    index: '1a',
   },
   {
     text:
       'Chciałbyś spróbować swoich sił w pracy handlowca lub masz do nas pytania?',
     cName: 'firstClass',
+    index: '2a',
   },
   {
     text: 'Chętnie udzielimy Ci na nie odpowiedzi.',
     cName: 'firstClass',
+    index: '3a',
   },
   {
     text: 'Oszczędność to najlepszy wybór, więc skontaktuj się z nami!',
     cName: 'secondClass',
+    index: '4a',
   },
 ];
 
@@ -38,7 +42,9 @@ const Brief = () => {
       <h2 className="title">Kontakt</h2>
       <div className="textContainer">
         {textContent.map((obj) => (
-          <p className={obj.cName}>{obj.text}</p>
+          <p key={obj.index} className={obj.cName}>
+            {obj.text}
+          </p>
         ))}
       </div>
       <ContactForm handleOpenPolicy={handleOpenPolicy} />

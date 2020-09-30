@@ -119,9 +119,9 @@
     .inputHolder,
     .textAreaContainer {
       width: 75%;
-    }
-    input {
-      width: 40rem;
+      input {
+        width: 40rem;
+      }
     }
   }
   .textAreaContainer {
@@ -136,29 +136,14 @@
     .textAreaContainer {
       width: 90%;
       flex-direction: column;
-    }
-    input {
-      width: 20rem;
-    }
-  }
-  .textAreaContainer {
-    TextArea {
-      width: 20rem;
-    }
-  }
-}
-@include mobile {
-  .formContainer {
-    .inputHolder,
-    .textAreaContainer {
       input {
-        width: 25rem;
+        width: 30rem;
       }
     }
   }
   .textAreaContainer {
     TextArea {
-      width: 25rem;
+      width: 30rem;
     }
   }
   .buttonContainer {
@@ -184,6 +169,21 @@
     .error {
       margin: 0 0.5rem;
       font-size: 1rem;
+    }
+  }
+}
+@include mobile {
+  .formContainer {
+    .inputHolder,
+    .textAreaContainer {
+      input {
+        width: 25rem;
+      }
+    }
+  }
+  .textAreaContainer {
+    TextArea {
+      width: 25rem;
     }
   }
 }

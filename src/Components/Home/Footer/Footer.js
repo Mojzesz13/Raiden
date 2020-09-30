@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.scss';
+import facebookIcon from '../../../assets/facebook.svg';
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
       </div>
       <div className="column">
         <a href="https://www.facebook.com/Raiden-Polska-Energia-111047260640361">
-          <i className="fab fa-facebook-square fa-2x" />
+          <img src={facebookIcon} alt="facebookIcon" />
         </a>
         <p>tel. 514 029 843</p>
         <a href="mailto:biuro@raiden.pl">biuro@raiden.pl</a>

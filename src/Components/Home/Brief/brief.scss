@@ -29,22 +29,25 @@
   }
 }
 
-@include desktop {
-}
-
 @include tabletMax {
+  .briefContainer {
+    transition: 0.5s;
+  }
+  .activeBrief {
+    height: 105rem;
+    transition: 0.5s;
+    .textContainer {
+      height: 25%;
+    }
+  }
 }
 
 @include tabletMin {
-}
-
-@include mobile {
   .briefContainer {
-    height: 115rem;
-    transition: 0.5s;
+    height: 95rem;
     .textContainer {
       width: 90%;
-      height: 40%;
+      height: 35%;
       p {
         margin-top: 3rem;
         font-size: 2rem;
@@ -56,10 +59,17 @@
     }
   }
   .activeBrief {
-    height: 185rem;
-    transition: 0.5s;
+    height: 145rem;
+  }
+}
+
+@include mobile {
+  .briefContainer {
     .textContainer {
-      height: 25%;
+      height: 40%;
     }
+  }
+  .activeBrief {
+    height: 215rem;
   }
 }
