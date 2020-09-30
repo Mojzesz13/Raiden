@@ -28,7 +28,7 @@
 
 @include desktop {
   .aboutUsContainer {
-    height: 120rem;
+    height: 100rem;
     background-size: cover;
     background-position: center;
     .title {
@@ -48,7 +48,7 @@
 
 @include tabletMax {
   .aboutUsContainer {
-    height: 100rem;
+    height: 90rem;
     .tailsContainer {
       width: 95%;
     }
@@ -57,7 +57,7 @@
 
 @include tabletMin {
   .aboutUsContainer {
-    height: 175rem;
+    height: 100rem;
   }
 }
 
