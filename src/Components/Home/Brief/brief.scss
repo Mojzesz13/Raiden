@@ -1,0 +1,65 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
+.briefContainer {
+  width: 100%;
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $fontColor;
+  background-image: url('../../../assets/bgContact.jpg');
+  background-position: center;
+  background-size: cover;
+  .title {
+    @include title;
+  }
+  .textContainer {
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    p {
+      margin-top: 3rem;
+      font-size: 3rem;
+    }
+    .secondClass {
+      padding-top: 5rem;
+      font-size: 3rem;
+    }
+  }
+}
+
+@include desktop {
+}
+
+@include tabletMax {
+}
+
+@include tabletMin {
+}
+
+@include mobile {
+  .briefContainer {
+    height: 115rem;
+    transition: 0.5s;
+    .textContainer {
+      width: 90%;
+      height: 40%;
+      p {
+        margin-top: 3rem;
+        font-size: 2rem;
+      }
+      .secondClass {
+        padding-top: 5rem;
+        font-size: 2rem;
+      }
+    }
+  }
+  .activeBrief {
+    height: 185rem;
+    transition: 0.5s;
+    .textContainer {
+      height: 25%;
+    }
+  }
+}

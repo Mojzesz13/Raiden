@@ -1,0 +1,189 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .inputHolder,
+  .textAreaContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    p {
+      margin-right: 1rem;
+      color: $secondFontColor;
+      span {
+        color: $fontColor;
+      }
+    }
+    input {
+      width: 45rem;
+      height: 3rem;
+      background-color: transparent;
+      border: 1px solid $fontColor;
+      color: $fontColor;
+      font-size: 2rem;
+      padding-left: 1rem;
+      &::placeholder {
+        margin-left: 1rem;
+      }
+      .helperText {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.textAreaContainer {
+  TextArea {
+    width: 45rem;
+    min-height: 8rem;
+    max-height: 10rem;
+    background-color: transparent;
+    border: 1px solid $fontColor;
+    color: $fontColor;
+    font-size: 2rem;
+    padding: 1rem 0 0 1rem;
+    line-height: 2.5rem;
+  }
+}
+.buttonContainer {
+  width: 60%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  justify-content: center;
+  .termsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .checkbox {
+      margin-right: 1%;
+      input {
+        width: 2rem;
+      }
+    }
+    .rodoPolicy {
+      margin: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: $secondFontColor;
+    }
+  }
+  button {
+    width: 16rem;
+    height: 4rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: $fontColor;
+    transition: 0.5s;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    border: 1.5px solid $secondFontColor;
+    &:hover {
+      color: $secondFontColor;
+      background-color: $fontColor;
+      border: 1.5px solid $fontColor;
+      box-shadow: 0 0 0.5rem $fontColor, 0 0 2.5rem $fontColor,
+        0 0 5rem $fontColor, 0 0 10rem $fontColor;
+    }
+  }
+  .error {
+    margin: 0 1rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    color: $secondFontColor;
+  }
+}
+
+@include desktop {
+  .formContainer {
+    .inputHolder,
+    .textAreaContainer {
+      width: 65%;
+    }
+  }
+}
+@include tabletMax {
+  .formContainer {
+    .inputHolder,
+    .textAreaContainer {
+      width: 75%;
+    }
+    input {
+      width: 40rem;
+    }
+  }
+  .textAreaContainer {
+    TextArea {
+      width: 40rem;
+    }
+  }
+}
+@include tabletMin {
+  .formContainer {
+    .inputHolder,
+    .textAreaContainer {
+      width: 90%;
+      flex-direction: column;
+    }
+    input {
+      width: 20rem;
+    }
+  }
+  .textAreaContainer {
+    TextArea {
+      width: 20rem;
+    }
+  }
+}
+@include mobile {
+  .formContainer {
+    .inputHolder,
+    .textAreaContainer {
+      input {
+        width: 25rem;
+      }
+    }
+  }
+  .textAreaContainer {
+    TextArea {
+      width: 25rem;
+    }
+  }
+  .buttonContainer {
+    width: 60%;
+    margin: 2rem 0;
+    .termsContainer {
+      p {
+        font-size: 1rem;
+        margin: 0;
+      }
+      width: 100%;
+      .checkbox {
+        margin-right: 1rem;
+        input {
+          width: 1rem;
+        }
+      }
+      .rodoPolicy {
+        margin: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+    .error {
+      margin: 0 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}

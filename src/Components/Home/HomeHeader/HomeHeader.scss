@@ -1,0 +1,36 @@
+@import 'src/scss/settings/mixins';
+
+.homeHeaderContainer {
+  width: 100%;
+  height: 100rem;
+  background-image: url('../../../assets/bgHeader.jpg');
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: calc(100%);
+}
+
+@include desktop {
+  .homeHeaderContainer {
+    height: 72rem;
+  }
+}
+
+@include tabletMax {
+  .homeHeaderContainer {
+    height: 55rem;
+  }
+}
+
+@include tabletMin {
+  .homeHeaderContainer {
+    height: 55rem;
+    background-size: cover;
+  }
+}
+
+@include mobile {
+  .homeHeaderContainer {
+    height: 65rem;
+    background-position: calc(63%);
+  }
+}

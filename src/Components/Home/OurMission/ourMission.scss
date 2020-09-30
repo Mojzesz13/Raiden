@@ -1,0 +1,182 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
+.ourMissionContainer {
+  width: 100%;
+  height: 120rem;
+  background-color: $backgroundColor;
+  .mainContent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../../../assets/bg9.jpg');
+    background-position: center;
+    background-size: cover;
+    .listHolder {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      font-size: 2.5rem;
+      flex-direction: column;
+      color: $fontColor;
+      .titleHolder {
+        @include title;
+      }
+      ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 30% 0 0 50%;
+        li {
+          list-style: none;
+          height: 10rem;
+          &:hover {
+            color: $secondFontColor;
+            transform: scale(1);
+          }
+          p {
+            display: block;
+            cursor: pointer;
+
+            &:hover + img {
+              opacity: 1;
+              animation: fadeIn ease 0.2s forwards;
+              display: block;
+            }
+          }
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          img {
+            width: 200%;
+            height: 1200%;
+            position: absolute;
+            right: -250%;
+            top: 0;
+            z-index: -2;
+            opacity: 0;
+            object-fit: cover;
+            display: none;
+          }
+          .image1 {
+            top: -240%;
+          }
+          .image2 {
+            top: -340%;
+          }
+          .image3 {
+            top: -440%;
+          }
+          .image4 {
+            top: -540%;
+          }
+          .image5 {
+            top: -640%;
+          }
+          .image6 {
+            top: -740%;
+          }
+          .image7 {
+            top: -840%;
+          }
+          .image8 {
+            top: -940%;
+          }
+        }
+      }
+    }
+    .divider {
+      width: 50%;
+    }
+  }
+}
+
+@include desktop {
+  .ourMissionContainer {
+    .mainContent {
+      .listHolder {
+        ul {
+          li {
+            .image1 {
+              top: -183%;
+            }
+            .image2 {
+              top: -283%;
+            }
+            .image3 {
+              top: -383%;
+            }
+            .image4 {
+              top: -483%;
+            }
+            .image5 {
+              top: -583%;
+            }
+            .image6 {
+              top: -683%;
+            }
+            .image7 {
+              top: -783%;
+            }
+            .image8 {
+              top: -883%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tabletMax {
+  .ourMissionContainer {
+    height: 100rem;
+    .mainContent {
+      width: 100%;
+      .listHolder {
+        width: 100%;
+        ul {
+          margin: 2rem auto;
+          li {
+            p {
+              width: 90%;
+              margin: 0 auto;
+              &:hover + img {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .divider {
+        display: none;
+      }
+    }
+  }
+}
+
+@include tabletMin {
+  .ourMissionContainer {
+    .mainContent {
+      .listHolder {
+        .titleHolder {
+          margin-bottom: 4rem;
+        }
+        ul {
+          margin: 4rem auto;
+        }
+      }
+    }
+  }
+}

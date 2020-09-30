@@ -1,0 +1,40 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
+.scrollTop {
+  height: 2rem;
+  width: 5%;
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.6;
+  font-size: 7rem;
+  color: $secondFontColor;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@include mobile {
+  .scrollTop {
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 5rem;
+  }
+}

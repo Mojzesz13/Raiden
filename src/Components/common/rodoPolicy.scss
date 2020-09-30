@@ -1,0 +1,50 @@
+.rodoComponent {
+  width: 90%;
+  height: 0;
+  margin: 1rem auto;
+  visibility: hidden;
+  align-self: center;
+  font-size: 1.5rem;
+  animation-duration: 0.5s;
+  animation-name: rodoAnimationBack;
+  animation-fill-mode: forwards;
+}
+@keyframes rodoAnimationBack {
+  0% {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    height: 15rem;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.activeRodo {
+  height: 15rem;
+  visibility: visible;
+  animation-name: rodoAnimation;
+  animation-fill-mode: forwards;
+}
+@keyframes rodoAnimation {
+  0% {
+    height: 15rem;
+    visibility: visible;
+    opacity: 1;
+  }
+  50% {
+    height: 15rem;
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

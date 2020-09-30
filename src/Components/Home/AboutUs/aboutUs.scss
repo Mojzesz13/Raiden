@@ -1,0 +1,68 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
+.aboutUsContainer {
+  width: 100%;
+  height: 95rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../../../assets/bgAboutUs.jpg');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: calc(100%);
+  .title {
+    @include title;
+    color: $secondFontColorDark;
+  }
+  .tailsContainer {
+    margin: 5% 0 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 70%;
+  }
+}
+
+@include desktop {
+  .aboutUsContainer {
+    height: 120rem;
+    background-size: cover;
+    background-position: center;
+    .title {
+      @include title;
+    }
+    .tailsContainer {
+      margin: 5% 0 5% 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 75%;
+      height: 70%;
+    }
+  }
+}
+
+@include tabletMax {
+  .aboutUsContainer {
+    height: 100rem;
+    .tailsContainer {
+      width: 95%;
+    }
+  }
+}
+
+@include tabletMin {
+  .aboutUsContainer {
+    height: 175rem;
+  }
+}
+
+@include mobile {
+  .aboutUsContainer {
+    height: 140rem;
+  }
+}
