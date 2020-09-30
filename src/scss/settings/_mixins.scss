@@ -22,17 +22,17 @@
 }
 
 @mixin title {
+  margin: 4rem 0 0 4rem;
   color: $secondFontColor;
   font-weight: 600;
   font-size: 3rem;
   align-self: start;
-  margin: 4rem 0 0 4rem;
   text-transform: uppercase;
 
   @include tabletMin {
+    margin: 0;
+    padding: 2rem 0 0 2rem;
     font-weight: 400;
     font-size: 2rem;
-    padding: 2rem 0 0 2rem;
-    margin: 0;
   }
 }

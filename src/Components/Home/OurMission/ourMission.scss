@@ -57,7 +57,7 @@
     background-position: center;
   }
 
-  .test {
+  .notHovering {
     visibility: hidden;
   }
 }
@@ -77,6 +77,10 @@
       width: 100%;
       .listHolder {
         width: 100%;
+        .titleHolder {
+          width: 100%;
+          @include title;
+        }
         ul {
           margin: 0 auto;
           padding-top: 5rem;

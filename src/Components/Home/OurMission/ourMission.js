@@ -62,7 +62,7 @@ const listItems = [
 
 const OurMission = () => {
   const [isHovering, setIsHovering] = useState(false);
-  const [imageSrc, setImageSrc] = useState(img1);
+  const [imageSrc, setImageSrc] = useState('');
 
   const handleOnMouseLeave = () => {
     setIsHovering(false);
@@ -93,7 +93,7 @@ const OurMission = () => {
         </div>
       </div>
       <div
-        className={isHovering ? 'divider' : 'test'}
+        className={isHovering ? 'divider' : 'notHovering'}
         style={{ backgroundImage: `url(${imageSrc})` }}
       ></div>
     </div>

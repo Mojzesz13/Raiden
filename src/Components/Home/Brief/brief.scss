@@ -65,11 +65,15 @@
 
 @include mobile {
   .briefContainer {
+    height: 105rem;
     .textContainer {
-      height: 25%;
+      height: 45%;
     }
   }
   .activeBrief {
-    height: 190rem;
+    height: 200rem;
+    .textContainer {
+      height: 25%;
+    }
   }
 }
