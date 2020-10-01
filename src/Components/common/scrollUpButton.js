@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './scrollUpButton.scss';
+import ArrowIcon from '../../assets/upArrow.png';
 
 const ScrollArrow = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -24,7 +25,7 @@ const ScrollArrow = () => {
       onClick={scrollTop}
       style={{ height: 40, display: showScroll ? 'flex' : 'none' }}
     >
-      <i className="fas fa-angle-double-up" />
+      <img src={ArrowIcon} alt="upArrow" />
     </div>
   );
 };

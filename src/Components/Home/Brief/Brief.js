@@ -28,7 +28,7 @@ const textContent = [
 ];
 
 const Brief = () => {
-  const [openPolicy, setOpenPolicy] = useState(false);
+  const [openPolicy, setOpenPolicy] = useState(true);
 
   const handleOpenPolicy = () => {
     setOpenPolicy((prevState) => !prevState);
@@ -36,7 +36,7 @@ const Brief = () => {
 
   return (
     <div
-      className={openPolicy ? 'briefContainer activeBrief' : 'briefContainer '}
+      className={openPolicy ? 'briefContainer ' : 'briefContainer  activeBrief'}
       id="brief"
     >
       <h2 className="title">Kontakt</h2>

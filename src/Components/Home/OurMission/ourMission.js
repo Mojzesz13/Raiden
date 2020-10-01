@@ -15,68 +15,59 @@ const listItems = [
     index: 1,
     text: 'Kontakt telefoniczny',
     src: img1,
-    cName: 'image1',
   },
   {
     index: 2,
     text: 'Umówienie spotkania',
     src: img2,
-    cName: 'image2',
   },
   {
     index: 3,
     text: 'Wykonanie audytu energetycznego',
     src: img3,
-    cName: 'image3',
   },
   {
     index: 4,
     text: 'Wybranie najlepszej oferty z rynku energetycznego',
     src: img4,
-    cName: 'image4',
   },
   {
     index: 5,
     text: 'Negocjacje stawek sprzedażowych',
     src: img5,
-    cName: 'image5',
   },
   {
     index: 6,
     text: 'Optymalizacja kosztów dystrybucji',
     src: img6,
-    cName: 'image6',
   },
   {
     index: 7,
     text: 'Podpisanie umowy ',
     src: img7,
-    cName: 'image7',
   },
   {
     index: 8,
     text: 'Oszczędność energetyczna ',
     src: img8,
-    cName: 'image8',
   },
 ];
 
 const OurMission = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [imageSrc, setImageSrc] = useState('');
-  const [isTablet, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   const resize = () => {
-    let currentView = window.innerWidth <= 1060;
+    let currentView = window.innerWidth <= 1099;
     if (currentView !== isTablet) {
-      setIsMobile(currentView);
+      setIsTablet(currentView);
     }
   };
 
   useEffect(() => {
     window.addEventListener('resize', resize.bind(this));
     resize();
-
     return window.removeEventListener('resize', resize.bind(this));
   });
 
@@ -88,6 +79,8 @@ const OurMission = () => {
     setImageSrc(source);
     setIsHovering(true);
   };
+
+  console.log();
 
   return (
     <div className="ourMissionContainer" id="ourMission">

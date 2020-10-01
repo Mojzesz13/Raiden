@@ -8,8 +8,9 @@ html {
 
 body {
   #root {
-    font-family: $font-base;
     box-sizing: border-box;
+    font-family: $font-base;
+    color: $fontColor;
   }
   background-color: black;
 }

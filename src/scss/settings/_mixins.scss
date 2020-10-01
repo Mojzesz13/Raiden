@@ -23,10 +23,10 @@
 
 @mixin title {
   margin: 4rem 0 0 4rem;
+  align-self: start;
   color: $secondFontColor;
   font-weight: 600;
   font-size: 3rem;
-  align-self: start;
   text-transform: uppercase;
 
   @include tabletMin {
@@ -34,5 +34,29 @@
     padding: 2rem 0 0 2rem;
     font-weight: 400;
     font-size: 2rem;
+  }
+}
+
+@mixin briefAnimationOpen($minHeight, $maxHeight) {
+  animation: openRodo 0.5s forwards;
+  @keyframes openRodo {
+    0% {
+      height: $minHeight;
+    }
+    100% {
+      height: $maxHeight;
+    }
+  }
+}
+
+@mixin briefAnimationClose($minHeight, $maxHeight) {
+  animation: closeRodo 0.5s forwards;
+  @keyframes closeRodo {
+    0% {
+      height: $maxHeight;
+    }
+    100% {
+      height: $minHeight;
+    }
   }
 }

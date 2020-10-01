@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 2rem;
+    transition: 1s;
     p {
       margin-right: 1rem;
       color: $secondFontColor;
@@ -35,6 +36,9 @@
       .helperText {
         font-size: 2rem;
       }
+    }
+    .Mui-error {
+      font-size: 1.5rem;
     }
   }
 }
@@ -58,7 +62,6 @@
   flex-direction: column;
   align-items: center;
   font-size: 1.4rem;
-  justify-content: center;
   .termsContainer {
     display: flex;
     flex-direction: row;
@@ -85,9 +88,9 @@
     margin-top: 2rem;
     background-color: transparent;
     color: $fontColor;
-    transition: 0.5s;
     font-size: 2rem;
     padding-top: 0.5rem;
+    transition: 0.5s;
     border: 1.5px solid $secondFontColor;
     &:hover {
       color: $secondFontColor;
@@ -116,6 +119,7 @@
 }
 @include tabletMax {
   .formContainer {
+    margin-top: 2rem;
     .inputHolder,
     .textAreaContainer {
       width: 75%;
@@ -185,5 +189,9 @@
     TextArea {
       width: 25rem;
     }
+  }
+  .buttonContainer {
+    width: 80%;
+    letter-spacing: 0.2rem;
   }
 }
