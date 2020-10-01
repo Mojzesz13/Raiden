@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ourMission.scss';
 import img1 from '../../../assets/bg1.jpg';
 import img2 from '../../../assets/bg2.jpg';
@@ -8,6 +8,7 @@ import img5 from '../../../assets/bg5.jpg';
 import img6 from '../../../assets/bg6.jpg';
 import img7 from '../../../assets/bg7.jpg';
 import img8 from '../../../assets/bg8.jpg';
+import img9 from '../../../assets/bg9.jpg';
 
 const listItems = [
   {
@@ -63,19 +64,41 @@ const listItems = [
 const OurMission = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [imageSrc, setImageSrc] = useState('');
+  const [isTablet, setIsMobile] = useState(false);
+
+  const resize = () => {
+    let currentView = window.innerWidth <= 1060;
+    if (currentView !== isTablet) {
+      setIsMobile(currentView);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', resize.bind(this));
+    resize();
+
+    return window.removeEventListener('resize', resize.bind(this));
+  });
 
   const handleOnMouseLeave = () => {
     setIsHovering(false);
   };
 
-  const handleSetImage = (sorce) => {
-    setImageSrc(sorce);
+  const handleSetImage = (source) => {
+    setImageSrc(source);
     setIsHovering(true);
   };
 
   return (
     <div className="ourMissionContainer" id="ourMission">
-      <div className="mainContent">
+      <div
+        className="mainContent"
+        style={
+          isTablet
+            ? { backgroundImage: `url(${imageSrc})` }
+            : { backgroundImage: `url(${img9})` }
+        }
+      >
         <div className="listHolder">
           <div className="titleHolder">Jak wygląda współpraca z nami</div>
           <ul>
