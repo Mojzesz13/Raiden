@@ -76,7 +76,6 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-
       input {
         position: absolute;
         opacity: 0;
@@ -98,14 +97,12 @@
         visibility: hidden;
       }
     }
-
     .checkbox:hover input ~ .checkMark {
       p {
         visibility: visible;
         color: grey;
       }
     }
-
     .checkbox input:checked ~ .checkMark {
       p {
         visibility: visible;
@@ -146,7 +143,6 @@
     color: $secondFontColor;
   }
 }
-
 @include desktop {
   .formContainer {
     .inputHolder,

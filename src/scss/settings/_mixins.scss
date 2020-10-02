@@ -20,7 +20,6 @@
     @content;
   }
 }
-
 @mixin title {
   margin: 4rem 0 0 4rem;
   align-self: start;
@@ -36,7 +35,6 @@
     font-size: 2rem;
   }
 }
-
 @mixin briefAnimationOpen($minHeight, $maxHeight) {
   animation: openRodo 0.5s forwards;
   @keyframes openRodo {
@@ -48,7 +46,6 @@
     }
   }
 }
-
 @mixin briefAnimationClose($minHeight, $maxHeight) {
   animation: closeRodo 0.5s forwards;
   @keyframes closeRodo {
