@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/raiden2/static/css/main.8fde42cf.chunk.css",
-    "main.js": "/raiden2/static/js/main.b2903362.chunk.js",
-    "main.js.map": "/raiden2/static/js/main.b2903362.chunk.js.map",
+    "main.css": "/raiden2/static/css/main.eae1803e.chunk.css",
+    "main.js": "/raiden2/static/js/main.42910fa0.chunk.js",
+    "main.js.map": "/raiden2/static/js/main.42910fa0.chunk.js.map",
     "runtime-main.js": "/raiden2/static/js/runtime-main.564aee2d.js",
     "runtime-main.js.map": "/raiden2/static/js/runtime-main.564aee2d.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/raiden2/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.d9098631.chunk.js": "/raiden2/static/js/2.d9098631.chunk.js",
     "static/js/2.d9098631.chunk.js.map": "/raiden2/static/js/2.d9098631.chunk.js.map",
     "index.html": "/raiden2/index.html",
-    "precache-manifest.f063d8b9f97a73384dc5f5707467fe14.js": "/raiden2/precache-manifest.f063d8b9f97a73384dc5f5707467fe14.js",
+    "precache-manifest.3444a7870c012ca5b8b4fa534493b2d9.js": "/raiden2/precache-manifest.3444a7870c012ca5b8b4fa534493b2d9.js",
     "service-worker.js": "/raiden2/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/raiden2/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.8fde42cf.chunk.css.map": "/raiden2/static/css/main.8fde42cf.chunk.css.map",
+    "static/css/main.eae1803e.chunk.css.map": "/raiden2/static/css/main.eae1803e.chunk.css.map",
     "static/js/2.d9098631.chunk.js.LICENSE.txt": "/raiden2/static/js/2.d9098631.chunk.js.LICENSE.txt",
     "static/media/carousel.scss": "/raiden2/static/media/arrowred.cac5d642.svg",
     "static/media/bg1.jpg": "/raiden2/static/media/bg1.8c0800ee.jpg",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.564aee2d.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.d9098631.chunk.js",
-    "static/css/main.8fde42cf.chunk.css",
-    "static/js/main.b2903362.chunk.js"
+    "static/css/main.eae1803e.chunk.css",
+    "static/js/main.42910fa0.chunk.js"
   ]
 }
