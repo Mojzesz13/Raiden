@@ -30,6 +30,9 @@ const CustomCheckbox = ({ children, ...props }) => {
       <label className="checkbox">
         <input type="checkbox" {...field} {...props} />
         {children}
+        <div className="checkMark">
+          <p>X</p>
+        </div>
       </label>
       {meta.touched && meta.error ? (
         <div className="error">{meta.error}</div>

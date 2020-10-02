@@ -70,8 +70,46 @@
     width: 100%;
     .checkbox {
       margin-right: 1%;
+      position: relative;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
       input {
-        width: 2rem;
+        position: absolute;
+        opacity: 0;
+      }
+    }
+    .checkMark {
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      top: -1.3rem;
+      right: 1rem;
+      background-color: Transparent;
+      border: 1px solid $secondFontColor;
+      text-align: center;
+      p {
+        position: absolute;
+        top: 0.45rem;
+        left: 0.3rem;
+        visibility: hidden;
+      }
+    }
+
+    .checkbox:hover input ~ .checkMark {
+      p {
+        visibility: visible;
+        color: grey;
+      }
+    }
+
+    .checkbox input:checked ~ .checkMark {
+      p {
+        visibility: visible;
+        color: $fontColor;
       }
     }
     .rodoPolicy {
