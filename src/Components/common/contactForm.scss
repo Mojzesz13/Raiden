@@ -90,23 +90,31 @@
       background-color: Transparent;
       border: 1px solid $secondFontColor;
       text-align: center;
-      p {
+      span {
         position: absolute;
-        top: 0.45rem;
-        left: 0.35rem;
+        top: 0.75rem;
+        left: -0.1rem;
+        width: 2rem;
+        height: 0.2rem;
         visibility: hidden;
+      }
+      :nth-child(1) {
+        transform: rotate(45deg);
+      }
+      :nth-child(2) {
+        transform: rotate(-45deg);
       }
     }
     .checkbox:hover input ~ .checkMark {
-      p {
+      span {
         visibility: visible;
-        color: grey;
+        background-color: grey;
       }
     }
     .checkbox input:checked ~ .checkMark {
-      p {
+      span {
         visibility: visible;
-        color: $fontColor;
+        background-color: $fontColor;
       }
     }
     .rodoPolicy {
@@ -133,6 +141,9 @@
       border: 1.5px solid $fontColor;
       box-shadow: 0 0 0.5rem $fontColor, 0 0 2.5rem $fontColor,
         0 0 5rem $fontColor, 0 0 10rem $fontColor;
+    }
+    &:focus {
+      outline: 0;
     }
   }
   .error {
