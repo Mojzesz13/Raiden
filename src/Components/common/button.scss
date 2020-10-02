@@ -17,9 +17,7 @@
     overflow: hidden;
     letter-spacing: 0.4rem;
     &:hover {
-      background: $fontColor;
-      box-shadow: 0 0 0.5rem $fontColor, 0 0 2.5rem $fontColor,
-        0 0 5rem $fontColor, 0 0 10rem $fontColor;
+      @include buttonHover;
     }
     span {
       position: absolute;

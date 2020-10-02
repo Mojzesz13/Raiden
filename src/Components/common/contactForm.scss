@@ -25,11 +25,11 @@
     input {
       width: 45rem;
       height: 3rem;
+      padding-left: 1rem;
       background-color: transparent;
       border: 1px solid $fontColor;
       color: $fontColor;
       font-size: 2rem;
-      padding-left: 1rem;
       &::placeholder {
         margin-left: 1rem;
       }
@@ -41,117 +41,116 @@
       font-size: 1.5rem;
     }
   }
+  .buttonContainer {
+    width: 60%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    .termsContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .checkbox {
+        margin-right: 1%;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input {
+          position: absolute;
+          opacity: 0;
+        }
+      }
+      .checkMark {
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        top: -1.3rem;
+        right: 1rem;
+        background-color: Transparent;
+        border: 1px solid $secondFontColor;
+        text-align: center;
+        span {
+          width: 2rem;
+          height: 0.2rem;
+          position: absolute;
+          top: 0.75rem;
+          left: -0.1rem;
+          visibility: hidden;
+        }
+        :nth-child(1) {
+          transform: rotate(45deg);
+        }
+        :nth-child(2) {
+          transform: rotate(-45deg);
+        }
+      }
+      .checkbox:hover input ~ .checkMark {
+        span {
+          visibility: visible;
+          background-color: grey;
+        }
+      }
+      .checkbox input:checked ~ .checkMark {
+        span {
+          visibility: visible;
+          background-color: $fontColor;
+        }
+      }
+      .rodoPolicy {
+        margin: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $secondFontColor;
+        cursor: pointer;
+      }
+    }
+    button {
+      width: 16rem;
+      height: 4rem;
+      margin-top: 2rem;
+      padding-top: 0.5rem;
+      background-color: transparent;
+      color: $fontColor;
+      font-size: 2rem;
+      transition: 0.5s;
+      border: 1.5px solid $secondFontColor;
+      &:hover {
+        color: $secondFontColor;
+        border: $fontColor;
+        @include buttonHover;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+    .error {
+      margin: 0 1rem;
+      position: relative;
+      bottom: 0;
+      right: 0;
+      color: $secondFontColor;
+    }
+  }
 }
+
 .textAreaContainer {
   TextArea {
     width: 45rem;
     min-height: 8rem;
     max-height: 10rem;
+    padding: 1rem 0 0 1rem;
     background-color: transparent;
     border: 1px solid $fontColor;
     color: $fontColor;
     font-size: 2rem;
-    padding: 1rem 0 0 1rem;
     line-height: 2.5rem;
-  }
-}
-.buttonContainer {
-  width: 60%;
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.4rem;
-  .termsContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    .checkbox {
-      margin-right: 1%;
-      position: relative;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      input {
-        position: absolute;
-        opacity: 0;
-      }
-    }
-    .checkMark {
-      height: 2rem;
-      width: 2rem;
-      position: absolute;
-      top: -1.3rem;
-      right: 1rem;
-      background-color: Transparent;
-      border: 1px solid $secondFontColor;
-      text-align: center;
-      span {
-        position: absolute;
-        top: 0.75rem;
-        left: -0.1rem;
-        width: 2rem;
-        height: 0.2rem;
-        visibility: hidden;
-      }
-      :nth-child(1) {
-        transform: rotate(45deg);
-      }
-      :nth-child(2) {
-        transform: rotate(-45deg);
-      }
-    }
-    .checkbox:hover input ~ .checkMark {
-      span {
-        visibility: visible;
-        background-color: grey;
-      }
-    }
-    .checkbox input:checked ~ .checkMark {
-      span {
-        visibility: visible;
-        background-color: $fontColor;
-      }
-    }
-    .rodoPolicy {
-      margin: 0.5rem;
-      font-size: 1.6rem;
-      font-weight: 700;
-      cursor: pointer;
-      color: $secondFontColor;
-    }
-  }
-  button {
-    width: 16rem;
-    height: 4rem;
-    margin-top: 2rem;
-    background-color: transparent;
-    color: $fontColor;
-    font-size: 2rem;
-    padding-top: 0.5rem;
-    transition: 0.5s;
-    border: 1.5px solid $secondFontColor;
-    &:hover {
-      color: $secondFontColor;
-      background-color: $fontColor;
-      border: 1.5px solid $fontColor;
-      box-shadow: 0 0 0.5rem $fontColor, 0 0 2.5rem $fontColor,
-        0 0 5rem $fontColor, 0 0 10rem $fontColor;
-    }
-    &:focus {
-      outline: 0;
-    }
-  }
-  .error {
-    margin: 0 1rem;
-    position: relative;
-    bottom: 0;
-    right: 0;
-    color: $secondFontColor;
   }
 }
 @include desktop {

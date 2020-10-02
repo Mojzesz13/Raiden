@@ -16,36 +16,22 @@
     color: $secondFontColorDark;
   }
   .tailsContainer {
+    width: 75%;
+    height: 70%;
     margin: 5% 0 5% 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 75%;
-    height: 70%;
   }
 }
-
 @include desktop {
   .aboutUsContainer {
     height: 100rem;
     background-size: cover;
     background-position: center;
-    .title {
-      @include title;
-    }
-    .tailsContainer {
-      margin: 5% 0 5% 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      width: 75%;
-      height: 70%;
-    }
   }
 }
-
 @include tabletMax {
   .aboutUsContainer {
     height: 90rem;
@@ -54,13 +40,11 @@
     }
   }
 }
-
 @include tabletMin {
   .aboutUsContainer {
     height: 100rem;
   }
 }
-
 @include mobile {
   .aboutUsContainer {
     height: 140rem;

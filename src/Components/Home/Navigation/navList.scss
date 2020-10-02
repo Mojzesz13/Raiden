@@ -9,46 +9,42 @@
   align-items: center;
   a {
     text-decoration: none;
-    cursor: pointer;
     font-size: 1.5rem;
     color: $fontColor;
+    cursor: pointer;
   }
   :hover {
     color: $secondFontColor;
   }
 }
-
 @include desktop {
   .headerLinks {
     width: 60%;
   }
 }
-
 @include tabletMin {
   .headerLinks {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 40vh;
+    height: 30rem;
     position: absolute;
     top: 15%;
     left: -100%;
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     transition: all 0.5s ease;
   }
   .headerLinks.active {
-    background: $navBackgroundColor;
     left: 0;
     opacity: 1;
+    background: $navBackgroundColor;
     transition: all 0.5s ease;
     z-index: 100;
-
     a {
       color: $secondFontColor;
     }
   }
 }
-
 @include mobile {
   .headerLinks {
     top: 15%;

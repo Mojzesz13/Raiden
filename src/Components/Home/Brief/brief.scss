@@ -4,12 +4,12 @@
 .briefContainer {
   width: 100%;
   height: 90rem;
-  background-image: url('../../../assets/bgContact.jpg');
-  background-position: center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../../../assets/bgContact.jpg');
+  background-position: center;
+  background-size: cover;
   @include briefAnimationClose(90rem, 105rem);
   .title {
     @include title;
@@ -31,38 +31,31 @@
   height: 105rem;
   @include briefAnimationOpen(90rem, 105rem);
 }
-
 @include desktop {
   .briefContainer {
     @include briefAnimationClose(90rem, 115rem);
   }
-
   .activeBrief {
     height: 115rem;
     @include briefAnimationOpen(90rem, 115rem);
   }
 }
-
 @include tabletMax {
   .briefContainer {
     height: 95rem;
     @include briefAnimationClose(95rem, 125rem);
   }
-
   .activeBrief {
     height: 125rem;
     @include briefAnimationOpen(95rem, 125rem);
   }
 }
-
 @include tabletMin {
   .briefContainer {
     height: 95rem;
     @include briefAnimationClose(95rem, 142rem);
-
     .textContainer {
       width: 90%;
-      height: 35%;
       p {
         margin-top: 3rem;
         font-size: 2rem;
@@ -78,7 +71,6 @@
     @include briefAnimationOpen(95rem, 142rem);
   }
 }
-
 @include mobile {
   .briefContainer {
     height: 100rem;

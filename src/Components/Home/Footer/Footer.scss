@@ -22,21 +22,19 @@
     img {
       width: 3rem;
       height: 3rem;
-      background-color: $footerIcon;
       margin: 1rem auto;
+      background-color: $footerIcon;
     }
   }
   div:nth-child(2) {
     margin-bottom: 2rem;
   }
 }
-
 @include tabletMax {
   .footerConainer {
     padding-top: 4rem;
   }
 }
-
 @include mobile {
   .footerConainer {
     height: 40rem;

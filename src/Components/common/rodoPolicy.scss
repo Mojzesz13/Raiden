@@ -9,7 +9,6 @@
   font-size: 1.5rem;
   animation-duration: 0.5s;
   animation-name: rodoAnimationBack;
-  // animation-fill-mode: forwards;
 }
 @keyframes rodoAnimationBack {
   0% {
@@ -41,10 +40,5 @@
   100% {
     display: block;
     opacity: 1;
-  }
-}
-
-@include tabletMin {
-  .activeRodo {
   }
 }
