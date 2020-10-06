@@ -64,26 +64,26 @@ const OurMission = () => {
       setIsTablet(currentView);
     }
   };
-
   useEffect(() => {
     window.addEventListener('resize', resize.bind(this));
     resize();
     return window.removeEventListener('resize', resize.bind(this));
   });
-
   const handleOnMouseLeave = () => {
     setIsHovering(false);
   };
-
   const handleSetImage = (source) => {
     setImageSrc(source);
     setIsHovering(true);
   };
 
-  console.log();
-
   return (
     <div className="ourMissionContainer" id="ourMission">
+      <div className="titleHolder">Jak wygląda współpraca z nami</div>
+      <div
+        className={isHovering ? 'divider' : 'notHovering'}
+        style={{ backgroundImage: `url(${imageSrc})` }}
+      />
       <div
         className="mainContent"
         style={
@@ -93,7 +93,6 @@ const OurMission = () => {
         }
       >
         <div className="listHolder">
-          <div className="titleHolder">Jak wygląda współpraca z nami</div>
           <ul>
             {listItems.map((obj) => (
               <li key={obj.index}>
@@ -108,10 +107,6 @@ const OurMission = () => {
           </ul>
         </div>
       </div>
-      <div
-        className={isHovering ? 'divider' : 'notHovering'}
-        style={{ backgroundImage: `url(${imageSrc})` }}
-      ></div>
     </div>
   );
 };
