@@ -4,20 +4,20 @@ import facebookIcon from '../../../assets/facebook.svg';
 
 const Footer = () => {
   return (
-    <div className="footerConainer">
-      <div className="column">
+    <div className='footerConainer'>
+      <div className='column'>
         <p>Raiden</p>
         <p>ul.Mariacka 7/3</p>
         <p>40-014 Katowice</p>
       </div>
-      <div className="column">
-        <a href="https://www.facebook.com/Raiden-Polska-Energia-111047260640361">
-          <img src={facebookIcon} alt="facebookIcon" />
+      <div className='column'>
+        <a href='https://www.facebook.com/Raiden-Polska-Energia-111047260640361'>
+          <img src={facebookIcon} alt='facebookIcon' />
         </a>
         <p>tel. 514 029 843</p>
-        <a href="mailto:biuro@raiden.pl">biuro@raiden.pl</a>
+        <a href='mailto:biuro@raiden.pl'>biuro@raiden.pl</a>
       </div>
-      <div className="column">
+      <div className='column'>
         <p>Pn-pt: 07:00 - 15:00</p>
         <p>Sb: nieczynne</p>
         <p>Nd: nieczynne</p>

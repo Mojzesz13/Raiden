@@ -10,9 +10,9 @@ const Navigation = () => {
   const handleOnClick = () => setClick(!click);
 
   return (
-    <div className="navigationContainer">
+    <div className='navigationContainer'>
       <Logo />
-      <div className="menuIcon" onClick={handleOnClick}>
+      <div className='menuIcon' onClick={handleOnClick}>
         <Hamburger click={click} />
       </div>
       <NavList click={click} />

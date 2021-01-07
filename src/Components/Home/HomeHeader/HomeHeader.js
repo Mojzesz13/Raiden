@@ -5,7 +5,7 @@ import './HomeHeader.scss';
 
 const HomeHeader = () => {
   return (
-    <div className="homeHeaderContainer">
+    <div className='homeHeaderContainer'>
       <Navigation />
       <ControlledCarousel />
     </div>

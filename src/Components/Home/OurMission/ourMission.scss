@@ -3,7 +3,7 @@
 
 .ourMissionContainer {
   width: 100%;
-  height: 100rem;
+  height: 110rem;
   background-color: $backgroundColor;
   display: flex;
   .mainContent {
@@ -25,7 +25,7 @@
       ul {
         width: 100%;
         height: 100%;
-        margin: 30% 0 0 50%;
+        margin: 35% 0 0 50%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -47,14 +47,9 @@
   }
   .divider {
     width: 50%;
-
     visibility: visible;
     background-position: center;
-  }
-  .notHovering {
-    visibility: hidden;
-    width: 50%;
-    height: 100%;
+    background-size: cover;
   }
   .titleHolder {
     @include title;

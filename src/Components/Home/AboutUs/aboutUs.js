@@ -20,9 +20,9 @@ const sixTitle = 'Sprzedaż i montaż baterii niwelujących moc bierną';
 
 const AboutUs = () => {
   return (
-    <div className="aboutUsContainer" id="aboutUs">
-      <div className="title">CZYM SIĘ ZAJMUJEMY?</div>
-      <div className="tailsContainer">
+    <div className='aboutUsContainer' id='aboutUs'>
+      <div className='title'>CZYM SIĘ ZAJMUJEMY?</div>
+      <div className='tailsContainer'>
         <Description icon={icon1} title={firstTitle} />
         <Description icon={icon2} title={secondTitle} />
         <Description icon={icon3} title={thidTitle} />

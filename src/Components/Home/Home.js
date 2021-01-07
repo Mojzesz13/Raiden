@@ -9,7 +9,7 @@ import ScrollArrow from '../common/scrollUpButton';
 
 const Home = () => {
   return (
-    <div className="homeContainer" id="main">
+    <div className='homeContainer' id='main'>
       <HomeHeader />
       <ScrollArrow />
       <AboutUs />

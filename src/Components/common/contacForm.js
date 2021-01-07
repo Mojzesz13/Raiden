@@ -15,7 +15,7 @@ const CustomTextInput = ({ label, ...props }) => {
         label={label}
         helperText={errorText}
         error={!!errorText}
-        margin="normal"
+        margin='normal'
         placeholder={label}
         inputProps={{ style: { fontSize: '3rem' } }}
         InputLabelProps={{ style: { display: 'none ' } }}
@@ -27,16 +27,16 @@ const CustomCheckbox = ({ children, ...props }) => {
   const [field, meta] = useField(props, 'checkbox');
   return (
     <>
-      <label className="checkbox">
-        <input type="checkbox" {...field} {...props} />
+      <label className='checkbox'>
+        <input type='checkbox' {...field} {...props} />
         {children}
-        <div className="checkMark">
+        <div className='checkMark'>
           <span />
           <span />
         </div>
       </label>
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className='error'>{meta.error}</div>
       ) : null}
     </>
   );
@@ -47,7 +47,7 @@ const TextArea = ({ label, ...props }) => {
     <TextField
       {...field}
       label={label}
-      margin="normal"
+      margin='normal'
       {...field}
       multiline
       rowsMax={10}
@@ -105,34 +105,34 @@ const ContactForm = ({ handleOpenPolicy }) => {
       }}
     >
       {(props) => (
-        <Form className="formContainer">
-          <div className="inputHolder">
+        <Form className='formContainer'>
+          <div className='inputHolder'>
             <p>Imię i nazwisko</p>
             <CustomTextInput
-              label="Imię i nazwisko"
-              name="personalDate"
-              type="text"
+              label='Imię i nazwisko'
+              name='personalDate'
+              type='text'
             />
           </div>
-          <div className="inputHolder">
+          <div className='inputHolder'>
             <p>Email</p>
-            <CustomTextInput label="Email" name="email" type="text" />
+            <CustomTextInput label='Email' name='email' type='text' />
           </div>
-          <div className="textAreaContainer">
+          <div className='textAreaContainer'>
             <p>
               <span> Wiadomość</span>
             </p>
-            <TextArea label="Wiadomość" name="message" type="text" />
+            <TextArea label='Wiadomość' name='message' type='text' />
           </div>
-          <div className="buttonContainer">
-            <div className="termsContainer">
-              <CustomCheckbox name="acceptTerms"></CustomCheckbox>
+          <div className='buttonContainer'>
+            <div className='termsContainer'>
+              <CustomCheckbox name='acceptTerms'></CustomCheckbox>
               <p>Akceptuję politykę prywatności</p>
-              <span className="rodoPolicy" onClick={handleOpenPolicy}>
+              <span className='rodoPolicy' onClick={handleOpenPolicy}>
                 RODO
               </span>
             </div>
-            <button type="submit">WYŚLIJ</button>
+            <button type='submit'>WYŚLIJ</button>
           </div>
         </Form>
       )}

@@ -21,11 +21,11 @@ const ScrollArrow = () => {
 
   return (
     <div
-      className="scrollTop"
+      className='scrollTop'
       onClick={scrollTop}
       style={{ height: 40, display: showScroll ? 'flex' : 'none' }}
     >
-      <img src={ArrowIcon} alt="upArrow" />
+      <img src={ArrowIcon} alt='upArrow' />
     </div>
   );
 };

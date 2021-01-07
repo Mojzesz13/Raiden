@@ -37,10 +37,10 @@ const Brief = () => {
   return (
     <div
       className={openPolicy ? 'briefContainer ' : 'briefContainer  activeBrief'}
-      id="brief"
+      id='brief'
     >
-      <h2 className="title">Kontakt</h2>
-      <div className="textContainer">
+      <h2 className='title'>Kontakt</h2>
+      <div className='textContainer'>
         {textContent.map((obj) => (
           <p key={obj.index} className={obj.cName}>
             {obj.text}

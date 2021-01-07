@@ -5,9 +5,9 @@ import logo from '../../../../assets/logo.png';
 
 const Logo = () => {
   return (
-    <div className="logo">
-      <Link to="/">
-        <img src={logo} alt="RaidenLogo" />
+    <div className='logo'>
+      <Link to='/'>
+        <img src={logo} alt='RaidenLogo' />
       </Link>
     </div>
   );

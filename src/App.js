@@ -1,13 +1,12 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
 import Home from './Components/Home/Home';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename='/'>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path='/' component={Home} />
       </Switch>
     </HashRouter>
   );

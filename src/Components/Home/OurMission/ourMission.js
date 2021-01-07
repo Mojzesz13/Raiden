@@ -9,6 +9,7 @@ import img6 from '../../../assets/bg6.jpg';
 import img7 from '../../../assets/bg7.jpg';
 import img8 from '../../../assets/bg8.jpg';
 import img9 from '../../../assets/bg9.jpg';
+import lg from '../../../assets/lukasgolda.jpg';
 
 const listItems = [
   {
@@ -54,8 +55,7 @@ const listItems = [
 ];
 
 const OurMission = () => {
-  const [isHovering, setIsHovering] = useState(false);
-  const [imageSrc, setImageSrc] = useState('');
+  const [imageSrc, setImageSrc] = useState(lg);
   const [isTablet, setIsTablet] = useState(false);
 
   const resize = () => {
@@ -70,29 +70,30 @@ const OurMission = () => {
     return window.removeEventListener('resize', resize.bind(this));
   });
   const handleOnMouseLeave = () => {
-    setIsHovering(false);
+    setImageSrc(lg);
+    console.log('leave');
   };
   const handleSetImage = (source) => {
     setImageSrc(source);
-    setIsHovering(true);
+    console.log('enter');
   };
 
   return (
-    <div className="ourMissionContainer" id="ourMission">
-      <div className="titleHolder">Jak wygląda współpraca z nami</div>
+    <div className='ourMissionContainer' id='ourMission'>
+      <div className='titleHolder'>Jak wygląda współpraca z nami</div>
       <div
-        className={isHovering ? 'divider' : 'notHovering'}
+        className='divider'
         style={{ backgroundImage: `url(${imageSrc})` }}
       />
       <div
-        className="mainContent"
+        className='mainContent'
         style={
           isTablet
             ? { backgroundImage: `url(${imageSrc})` }
             : { backgroundImage: `url(${img9})` }
         }
       >
-        <div className="listHolder">
+        <div className='listHolder'>
           <ul>
             {listItems.map((obj) => (
               <li key={obj.index}>
